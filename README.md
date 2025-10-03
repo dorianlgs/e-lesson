@@ -33,6 +33,9 @@ cd ui && npm install
 # Run development server with hot reload
 go run . serve
 
+# Run with custom network binding (specific IP and port)
+go run . serve --http="192.168.100.100:8090"
+
 # Frontend development (separate terminal)
 cd ui && npm run dev
 ```

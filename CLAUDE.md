@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Go Backend
 - **Development**: `go run . serve` - Runs the PocketBase server with hot reload
+- **Custom network binding**: `go run . serve --http="192.168.100.100:8090"` - Bind to specific IP and port
 - **Install dependencies**: `go mod tidy`
 - **Production build**: `GOOS=linux GOARCH=amd64 go build -ldflags "-s -w"`
 - **Update dependencies**: `go get -u -t ./... && go mod tidy`
